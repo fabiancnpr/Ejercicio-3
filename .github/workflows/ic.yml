@@ -1,0 +1,20 @@
+name: Extraer correos de logs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  extract-emails:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Dar permisos al script
+        run: chmod +x scripts/extract_emails.sh
+
+      - name: Ejecutar script de extracción
+        run: ./scripts/extract_emails.sh

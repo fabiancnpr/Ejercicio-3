@@ -1,0 +1,4 @@
+Usuario conectado: juan.perez@gmail.com
+Error en sesión de maria_lopez@empresa.es
+Acceso correcto: admin@test.org
+Soporte: soporte@empresa.es
